@@ -5,38 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1. Einordnung - Julias Spickzettel</title>
     <style>
-        body { font-family: -apple-system, sans-serif; background-color: #f4f7f4; color: #333; margin: 0; padding: 15px; line-height: 1.6; }
-        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #2c5e3b; padding-bottom: 10px; }
-        h1 { color: #2c5e3b; font-size: 1.6em; margin: 10px 0 0 0; }
-        .back-btn { display: inline-block; margin-top: 10px; padding: 10px 15px; background-color: #4a7c59; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9em; }
-        .category-card { background-color: #ffffff; border-left: 5px solid #669975; border-radius: 6px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        h2 { color: #1a4025; font-size: 1.2em; margin-top: 0; }
-        ul { padding-left: 20px; margin: 0; }
-        li { margin-bottom: 8px; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f4;
+            color: #333;
+            margin: 0;
+            padding: 15px;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #2c5e3b;
+            font-size: 1.6em;
+            margin-bottom: 5px;
+            border-bottom: 2px solid #2c5e3b;
+            padding-bottom: 10px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #4a7c59;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .category-card {
+            background-color: #ffffff;
+            border-left: 5px solid #669975;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #1a4025;
+            font-size: 1.2em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .symbol {
+            font-weight: bold;
+            color: #8b5a2b;
+            margin-left: 5px;
+        }
+        .note {
+            font-size: 0.85em;
+            color: #666;
+            font-style: italic;
+            margin-top: 5px;
+            display: block;
+        }
     </style>
 </head>
 <body>
+
     <div class="header">
         <h1>1. Einordnung</h1>
         <a href="index.html" class="back-btn">← Zurück zur Übersicht</a>
     </div>
+
     <div class="category-card">
-        <h2>Gehölze</h2>
+        <h2>Gehölze <span class="symbol">[ ♄ ]</span></h2>
         <ul>
-            <li>Laubgehölz</li>
-            <li>Nadelgehölz</li>
-            <li>Klettergehölz</li>
-            <li>Halbstrauch</li>
+            <li><strong>Laubgehölz:</strong> Sommergrüne oder immergrüne Bäume und Sträucher mit flächigen Blättern.</li>
+            <li><strong>Nadelgehölz (Konifere):</strong> Meist immergrüne Gehölze mit nadelförmigen oder schuppenförmigen Blättern.</li>
+            <li><strong>Klettergehölz:</strong> Verholzende Lianen (Schlinger, Ranker, Spreizklimmer, Wurzelkletterer).</li>
+            <li><strong>Halbstrauch:</strong> Unten verholzt, an den Triebspitzen krautig (z. B. Lavendel).</li>
         </ul>
     </div>
+
     <div class="category-card">
-        <h2>Stauden</h2>
+        <h2>Stauden <span class="symbol">[ ♃ ]</span></h2>
         <ul>
-            <li>Freilandstaude</li>
-            <li>Ziergras</li>
-            <li>Farn</li>
-            <li>Wasser- / Sumpfstaude</li>
+            <li><strong>Freilandstaude:</strong> Mehrjährige, krautige Pflanze, überwintert meist unterirdisch.</li>
+            <li><strong>Ziergras:</strong> Mehrjährige Gräser (Süßgräser, Sauergräser, Binsengewächse).</li>
+            <li><strong>Farn:</strong> Sporenpflanze ohne Blüten.</li>
+            <li><strong>Wasser- / Sumpfstaude:</strong> An dauerfeuchte oder überflutete Standorte angepasste Staude.</li>
         </ul>
     </div>
+
+    <div class="category-card">
+        <h2>Saisonale krautige Pflanzen</h2>
+        <ul>
+            <li><strong>Einjährige (Annuelle) <span class="symbol">[ ☉ ]</span>:</strong> Keimung, Blüte und Absterben innerhalb eines Jahres (Sommerblumen).</li>
+            <li><strong>Zweijährige (Bienne) <span class="symbol">[ ⚇ ]</span>:</strong> Im ersten Jahr Blattrosette, im zweiten Jahr Blüte und Absterben.</li>
+        </ul>
+    </div>
+
+    <div class="category-card">
+        <h2>Geophyten (Erdpflanzen)</h2>
+        <ul>
+            <li><strong>Zwiebelpflanze:</strong> Gestauchte Sprossachse mit fleischigen Schuppenblättern (z. B. Tulpe).</li>
+            <li><strong>Knollenpflanze:</strong> Verdicktes Speicherorgan ohne Schalen (z. B. Dahlie).</li>
+            <li><strong>Rhizompflanze:</strong> Unterirdischer, verdickter Erdspross (z. B. Maiglöckchen).</li>
+        </ul>
+        <span class="note">Hinweis: Geophyten werden im GaLaBau oft den Stauden zugeordnet, in der Botanik jedoch als eigene Lebensform geführt.</span>
+    </div>
+
 </body>
 </html>
