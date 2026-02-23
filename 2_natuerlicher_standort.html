@@ -5,35 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2. Natürlicher Standort - Julias Spickzettel</title>
     <style>
-        body { font-family: -apple-system, sans-serif; background-color: #f4f7f4; color: #333; margin: 0; padding: 15px; line-height: 1.6; }
-        .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #2c5e3b; padding-bottom: 10px; }
-        h1 { color: #2c5e3b; font-size: 1.6em; margin: 10px 0 0 0; }
-        .back-btn { display: inline-block; margin-top: 10px; padding: 10px 15px; background-color: #4a7c59; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.9em; }
-        .category-card { background-color: #ffffff; border-left: 5px solid #669975; border-radius: 6px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        h2 { color: #1a4025; font-size: 1.2em; margin-top: 0; }
-        ul { padding-left: 20px; margin: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f4;
+            color: #333;
+            margin: 0;
+            padding: 15px;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #2c5e3b;
+            font-size: 1.6em;
+            margin-bottom: 5px;
+            border-bottom: 2px solid #2c5e3b;
+            padding-bottom: 10px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #4a7c59;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .category-card {
+            background-color: #ffffff;
+            border-left: 5px solid #669975;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #1a4025;
+            font-size: 1.2em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .note {
+            font-size: 0.85em;
+            color: #666;
+            font-style: italic;
+            margin-top: 5px;
+            display: block;
+        }
     </style>
 </head>
 <body>
+
     <div class="header">
         <h1>2. Natürlicher Standort</h1>
         <a href="index.html" class="back-btn">← Zurück zur Übersicht</a>
     </div>
+
     <div class="category-card">
-        <h2>Waldhabitate</h2>
+        <h2>Wald- und Gehölzhabitate</h2>
         <ul>
-            <li>Laubmischwald</li>
-            <li>Nadelwald</li>
-            <li>Auwald</li>
+            <li><strong>Laubmischwald:</strong> Artenreiche Bestände, oft humose, frische Böden.</li>
+            <li><strong>Nadelwald:</strong> Oft saure Böden (Rohhumus), weniger Licht am Boden.</li>
+            <li><strong>Auwald:</strong> Flussbegleitend, zeitweise Überschwemmungen, nährstoffreich.</li>
+            <li><strong>Bruch- / Sumpfwald:</strong> Dauerhaft hoher Grundwasserstand, sauerstoffarm.</li>
+            <li><strong>Waldrand / Lichtungen:</strong> Höherer Lichtanteil, windgeschützt, krautreich.</li>
         </ul>
     </div>
+
     <div class="category-card">
         <h2>Offene Landschaften</h2>
         <ul>
-            <li>Sonnige Freiflächen</li>
-            <li>Heide</li>
-            <li>Trockenrasen</li>
+            <li><strong>Sonnige Freiflächen:</strong> Wiesen, Steppen oder Prärien. Viel Licht, oft windexponiert.</li>
+            <li><strong>Heide:</strong> Nährstoffarme Sandböden, oft sauer (z.B. Calluna-Heiden).</li>
+            <li><strong>Trocken- / Magerrasen:</strong> Sehr nährstoffarm, kalkreich oder kalkarm, extreme Sommerhitze.</li>
         </ul>
     </div>
+
+    <div class="category-card">
+        <h2>Wasser- und Uferbereiche</h2>
+        <ul>
+            <li><strong>Uferzone:</strong> Wechselfeucht bis nass, oft schlammig.</li>
+            <li><strong>Moorgelände:</strong> Nährstoffarm, extrem sauer (Hochmoor) oder basenreicher (Niedermoor).</li>
+            <li><strong>Aquatische Standorte:</strong> Stehende oder fließende Gewässer.</li>
+        </ul>
+    </div>
+
+    <div class="category-card">
+        <h2>Fels- und Gebirgsstandorte</h2>
+        <ul>
+            <li><strong>Alpiner Standort:</strong> Kurze Vegetationszeit, hohe UV-Strahlung, steinige Böden.</li>
+            <li><strong>Felsspalten / Geröllhalden:</strong> Extrem flachgründig, sehr gute Drainage, trocken.</li>
+        </ul>
+    </div>
+
+    <div class="category-card">
+        <h2>Sonderstandorte</h2>
+        <ul>
+            <li><strong>Küsten- / Dünenstandorte:</strong> Sandig, salzhaltige Luft und Böden.</li>
+            <li><strong>Ruderalstandorte:</strong> Schuttplätze, Wegränder, Industriebrachen (Pionierstandorte).</li>
+        </ul>
+        <span class="note">Tipp: Der natürliche Standort gibt oft den entscheidenden Hinweis auf die Winterhärte.</span>
+    </div>
+
 </body>
 </html>
