@@ -5,36 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julias Spickzettel - Pflanzensteckbriefe</title>
     <style>
-        body { font-family: -apple-system, sans-serif; background-color: #f4f7f4; color: #333; margin: 0; padding: 15px; line-height: 1.5; }
-        h1 { color: #2c5e3b; text-align: center; border-bottom: 2px solid #2c5e3b; padding-bottom: 10px; }
-        .nav-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; }
-        .nav-list a { display: block; padding: 16px; background: white; border-left: 6px solid #4a7c59; border-radius: 6px; text-decoration: none; color: #1a4025; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .leaf-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 10px; }
-        .leaf-link { padding: 10px; text-align: center; font-size: 0.9em; background: #eef5ef; border-radius: 4px; border: 1px solid #cce0d2; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f4;
+            color: #333;
+            margin: 0;
+            padding: 15px;
+            line-height: 1.5;
+        }
+        h1 {
+            color: #2c5e3b;
+            text-align: center;
+            font-size: 1.8em;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            border-bottom: 2px solid #2c5e3b;
+            padding-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .nav-list a {
+            display: block;
+            padding: 16px;
+            background-color: #ffffff;
+            border: 1px solid #cce0d2;
+            border-left: 6px solid #4a7c59;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #1a4025;
+            font-weight: 600;
+            font-size: 1.05em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: background-color 0.2s;
+        }
+        .nav-list a:active {
+            background-color: #e6f2ea;
+        }
+        .number {
+            color: #669975;
+            display: inline-block;
+            width: 25px;
+            font-weight: normal;
+        }
+        .new-tag {
+            font-size: 0.7em;
+            background-color: #8b5a2b;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
+
     <h1>Julias Spickzettel</h1>
+    <div class="subtitle">Ausfüllhilfe für Pflanzenberichte im Gartenbau</div>
+
     <ul class="nav-list">
-        <li><a href="1_einordnung.html">1. Einordnung</a></li>
-        <li><a href="2_natuerlicher_standort.html">2. Natürlicher Standort</a></li>
-        <li><a href="3_wuchsform.html">3. Wuchsform</a></li>
-        <li>
-            <div style="background: white; border-left: 6px solid #4a7c59; padding: 15px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                <span style="font-weight: bold; color: #1a4025;">4. Blätter:</span>
-                <div class="leaf-grid">
-                    <a href="4a_stellung.html" class="leaf-link">Stellung</a>
-                    <a href="4b_form.html" class="leaf-link">Form</a>
-                    <a href="4c_rand.html" class="leaf-link">Rand</a>
-                </div>
-            </div>
-        </li>
-        <li><a href="5_herbstfaerbung.html">5. Herbstfärbung</a></li>
-        <li><a href="6_lebensbereich.html">6. Lebensbereich</a></li>
-        <li><a href="7_heimat.html">7. Heimat</a></li>
-        <li><a href="11_geselligkeit.html">11. Geselligkeit & Stückzahl</a></li>
-        <li><a href="16_ph_wert.html">16. pH-Wert</a></li>
-        <li><a href="18_verwendung.html">18. Verwendung</a></li>
+        <li><a href="1_einordnung.html"><span class="number">1.</span> Einordnung (z. B. Laubgehölz, Staude)</a></li>
+        <li><a href="2_natuerlicher_standort.html"><span class="number">2.</span> Natürlicher Standort</a></li>
+        <li><a href="3_wuchsform.html"><span class="number">3.</span> Wuchsform</a></li>
+		<li>
+			<strong>4. Blätter:</strong> 
+			<a href="4a_stellung.html">Stellung</a> | 
+			<a href="4b_form.html">Form</a> | 
+			<a href="4c_rand.html">Rand</a>
+		</li>
+        <li><a href="5_herbstfaerbung.html"><span class="number">5.</span> Herbstfärbung</a></li>
+        <li><a href="6_lebensbereich.html"><span class="number">6.</span> Lebensbereich fachl. Abkürzungen</a></li>
+        <li><a href="7_heimat.html"><span class="number">7.</span> Heimat (Herkunft) </a></li>
+        <li><a href="8_bluetenfarbe.html"><span class="number">8.</span> Blütenfarbe</a></li>
+        <li><a href="9_bluetenstand.html"><span class="number">9.</span> Blütenstand</a></li>
+        <li><a href="10_fruechte.html"><span class="number">10.</span> Früchte (Art, Stand)</a></li>
+        <li><a href="11_geselligkeit.html"><span class="number">11.</span> Geselligkeit (Einzeln bis Flächig)</a></li>
+        <li><a href="12_lichtverhaeltnisse.html"><span class="number">12.</span> Lichtverhältnisse (Sonne bis Schatten)</a></li>
+        <li><a href="13_feuchtigkeitsbedarf.html"><span class="number">13.</span> Feuchtigkeitsbedarf</a></li>
+        <li><a href="14_bodenansprueche.html"><span class="number">14.</span> Bodenansprüche</a></li>
+        <li><a href="15_kalk.html"><span class="number">15.</span> Kalk</a></li>
+        <li><a href="16_ph_wert.html"><span class="number">16.</span> pH-Wert</a></li>
+        <li><a href="17_naehrstoffbedarf.html"><span class="number">17.</span> Nährstoffbedarf</a></li>
+        <li><a href="18_verwendung.html"><span class="number">18.</span> Verwendung (Einsatzgebiete im GaLaBau)</a></li>
+        <li><a href="19_vermehrung.html"><span class="number">19.</span> Gärtnerische Vermehrung</a></li>
     </ul>
+
 </body>
 </html>
